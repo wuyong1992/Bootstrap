@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>按钮</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+<!--
+    可作为按钮的标签一共有三种：a，input,button
+    a标签加role增强可访问性
+    导航和导航条中只支持button
+-->
+<div class="container">
+    <a href="#" class="btn btn-default" role="button">link</a>
+
+    <hr>
+
+    <button class="btn btn-default" type="submit">提交</button>
+
+    <hr>
+
+    <input type="button" class="btn btn-default" value="按钮">
+
+    <br>
+
+    <button type="button" class="btn btn-default">默认</button>
+    <button type="button" class="btn btn-primary">首选</button>
+    <button type="button" class="btn btn-success">成功</button>
+    <button type="button" class="btn btn-info">信息</button>
+    <button type="button" class="btn btn-warning">警告</button>
+    <button type="button" class="btn btn-danger">危险</button>
+
+    <hr>
+
+    <button type="button" class="btn btn-danger btn-lg">大</button>
+    <button type="button" class="btn btn-danger ">默认</button>
+    <button type="button" class="btn btn-danger btn-sm">小</button>
+    <button type="button" class="btn btn-danger btn-xs">手机按钮</button>
+
+    <hr>
+
+    <button class="btn btn-primary btn-lg btn-block" type="button">块级大按钮</button>
+
+    <hr>
+    <button type="button" class="btn btn-primary active">选中效果</button>
+    <a href="#" class="btn btn-primary active" role="button">选中a标签</a>
+
+    <hr>
+    <!--禁用状态-->
+    <button type="button" class="btn btn-primary disabled">禁用</button>
+    <a href="#" class="btn btn-primary disabled" role="button">禁用a标签</a>
+</div>
+</body>
+</html>

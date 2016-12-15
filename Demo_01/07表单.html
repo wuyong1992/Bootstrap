@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07表单</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="name">用户名</label>
+            <input type="text" class="form-control" placeholder="name" id="name">
+        </div>
+        <div class="form-group">
+            <label for="password">密码</label>
+            <input type="password" class="form-control" placeholder="password" id="password">
+        </div>
+        <div class="form-group">
+            <label for="file">文件选择</label>
+            <input type="file" id="file">
+            <p>请选择你需要的文件</p>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox">man
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">提交</button>
+    </form>
+
+    <hr>
+
+    <!--内联表单-->
+    <form class="form-inline" action="">
+        <div class="form-group">
+            <label class="sr-only">name</label>
+            <input type="text" class="form-control" placeholder="name">
+        </div>
+        <div class="form-group">
+            <label>paasword</label>
+            <input type="password" class="form-control" placeholder="password">
+        </div>
+        <div class="form-group">
+            <label>金额</label>
+            <div class="input-group">
+                <div class="input-group-addon">$</div>
+                <input type="number" class="form-control" placeholder="金额">
+                <div class="input-group-addon">.00</div>
+            </div>
+        </div>
+    </form>
+
+    <hr>
+    <!--水平表单,可利用栅格系统-->
+    <form action="" class="form-horizontal">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">name</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <textarea class="form-control" rows="3"></textarea>
+    </form>
+
+    <hr>
+    <!--下拉选项-->
+    <select class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+    <p>展开形式</p>
+    <select multiple class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+
+    <hr>
+
+    <!--静态表现-->
+    <div class="form-group">
+        <label class="control-label col-sm-2">name</label>
+        <div class="col-sm-10">
+            <p class="form-control-static">这是测试ootstrap。</p>
+        </div>
+    </div>
+
+    <hr>
+    <!--焦点状态-->
+    <label class="sr-only">Hello</label>
+    <input type="text" class="form-control focus">
+
+    <hr>
+
+    <!--禁用状态-->
+    <label>can not use</label>
+    <input type="text" class="form-control" placeholder="can not use" disabled>
+
+    <hr>
+
+    <!--fieldset标签可以群体禁用一些功能-->
+    <div class="form-group">
+        <fieldset disabled>
+            <div class="form-group">
+                <label class="sr-only">name</label>
+                <input type="text" placeholder="can not use" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="sr-only">password</label>
+                <input type="password" placeholder="can not use" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="sr-only">email</label>
+                <input type="email" placeholder="can not use" class="form-control">
+            </div>
+            <div class="form-group col-sm-1">
+                <button type="submit" class="form-control">提交</button>
+            </div>
+            注意：<a href="">a标签</a>超链接不受影响！
+        </fieldset>
+    </div>
+
+    <hr>
+
+    <!--只读状态-->
+    <div class="form-group">
+        <label class="sr-only">name</label>
+        <input type="text" class="form-control" placeholder="read only" readonly>
+    </div>
+
+    <hr>
+
+    <!--校验状态-->
+    <div class="form-group has-success">
+        <label class="control-label">Hello</label>
+        <input type="text" class="form-control" placeholder="校验成功">
+    </div>
+
+    <hr>
+
+    <!--校验状态配合后方小图标-->
+    <div class="form-group has-success has-feedback">
+        <label class="control-label">Hello</label>
+        <input type="text" class="form-control" placeholder="缺乏字体库，显示不正确，注意后方小图标">
+        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+    </div>
+
+    <hr>
+
+    <!--尺寸:4种-->
+    <div class="form-group">
+        <label class="control-label">size</label>
+        <input type="text" class="form-control input-lg" placeholder="大">
+        <input type="text" class="form-control" placeholder="默认">
+        <input type="text" class="form-control input-sm" placeholder="小">
+    </div>
+
+    <hr>
+
+    <!--输入框辅助文本-->
+    <div class="form-group">
+        <label class="control-label sr-only">Hello</label>
+        <input type="text" class="form-control" aria-describedby="help-block">
+        <span id="help-block" class="help-block">这是辅助文本,用于上面输入框的提示</span>
+    </div>
+
+</div>
+</body>
+</html>
